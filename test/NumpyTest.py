@@ -9,7 +9,8 @@ def side_effect(arr):
     print(arr)
 
 arr = np.array([[0, 1], [3, 4]])
-print(arr)
+# print(arr)
 
-side_effect(arr)
-print(arr)
+# side_effect(arr)
+# print(arr)
+print('sum = '+str(np.sum(arr, axis=0)))

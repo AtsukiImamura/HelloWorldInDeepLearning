@@ -2,7 +2,10 @@ import sys, os
 sys.path.append(os.pardir)
 import numpy as np
 
+# レイヤのインターフェースを定める基底クラス
 class Layer:
+
+    LEARNING_RATE = 0.1
 
     # コンストラクタ
     def __init__(self, input_size, output_size):
@@ -14,6 +17,10 @@ class Layer:
         pass
 
     # 逆方向
-    def backword(self):
+    def backward(self):
+        pass
+    
+    # パラメータのアップデート（誤差逆伝播法による）
+    def update(self):
         pass
     

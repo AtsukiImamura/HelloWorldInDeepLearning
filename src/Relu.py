@@ -1,12 +1,11 @@
 import sys, os
 sys.path.append(os.pardir)
 import numpy as np
-
 import Layer as Layer
 
 class Relu (Layer.Layer):
-    
-     def __init__(self):
+
+    def __init__(self):
         self.mask = None
 
     def forward(self, x):
@@ -21,4 +20,7 @@ class Relu (Layer.Layer):
         dx = dout
 
         return dx
+
+    def update(self):
+        pass
 
